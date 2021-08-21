@@ -5,4 +5,4 @@ Changes:<br>
 (2) VIS can display disks
 <br><br>
 *First version released in February 2011 by Simon Hong.<br>
-You received free, give free.
+*You received free, give free.
