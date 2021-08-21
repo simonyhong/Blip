@@ -1,0 +1,20 @@
+Version_number: 1.10
+GlobalTitle:      Orthodromic Stimulation
+How_many_ROWs: 1
+How_many_COLUMNs: 1
+
+0	0
+Title:      Stimulation
+MustExiestECodes:      19
+MustNotExiestECodes:    
+OneOfThemMustExiestECodes:    
+5	29	593	366
+6	12
+-1	-1
+NULL
+NULL
+-500.000	500.000	0.000	300.000
+0
+2	0	19	7	6.000	
+
+

@@ -1,0 +1,245 @@
+Version_number: 1.10
+GlobalTitle:               1DR (Fix)                                                                                                                |=========  Target ==========|                                                                                                                   (Saccade)                                                                                                                     (Reward)      
+How_many_ROWs: 2
+How_many_COLUMNs: 8
+
+0	0
+Title:             Small
+MustExiestECodes:               3000; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+5	29	250	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	2	6	10.000	
+
+
+1	0
+Title:             Big
+MustExiestECodes:               3001; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+5	201	250	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	2	6	10.000	
+
+
+0	1
+Title:             Big
+MustExiestECodes:               3011; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+255	29	500	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	2	6	10.000	
+
+
+1	1
+Title:             Small
+MustExiestECodes:               3010; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+255	201	500	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	2	6	10.000	
+
+
+0	2
+Title:             Small
+MustExiestECodes:               3000; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+505	29	750	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	6	7	10.000	
+
+
+1	2
+Title:             Big
+MustExiestECodes:               3001; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+505	201	750	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	6	7	10.000	
+
+
+0	3
+Title:             Big
+MustExiestECodes:               3011; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+755	29	1000	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	6	7	10.000	
+
+
+1	3
+Title:             Small
+MustExiestECodes:               3010; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+755	201	1000	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	6	7	10.000	
+
+
+0	4
+Title:             Small
+MustExiestECodes:               3000; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1005	29	1250	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	7	10	10.000	
+
+
+1	4
+Title:             Big
+MustExiestECodes:               3001; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1005	201	1250	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	7	10	10.000	
+
+
+0	5
+Title:             Big
+MustExiestECodes:               3011; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1255	29	1500	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	7	10	10.000	
+
+
+1	5
+Title:             Small
+MustExiestECodes:               3010; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1255	201	1500	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	7	10	10.000	
+
+
+0	6
+Title:             Small
+MustExiestECodes:               3000; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1505	29	1750	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	10	2147483647	10.000	
+
+
+1	6
+Title:             Big
+MustExiestECodes:               3001; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1505	201	1750	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	10	2147483647	10.000	
+
+
+0	7
+Title:             Big
+MustExiestECodes:               3011; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1755	29	2000	196
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	10	2147483647	10.000	
+
+
+1	7
+Title:             Small
+MustExiestECodes:               3010; 12
+MustNotExiestECodes:      
+OneOfThemMustExiestECodes:      
+1755	201	2000	368
+6	12
+-1	-1
+NULL
+NULL
+-1000.000	1000.000	0.000	100.000
+0
+0	0	10	2147483647	10.000	
+
+

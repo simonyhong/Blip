@@ -1,0 +1,16 @@
+Version_number: 0.01
+GlobalTitle: NoName
+How_many_ROWs: 1
+How_many_COLUMNs: 1
+
+0	0
+Title: Channel: 0
+5	17	787	507
+6	12
+-1	-1
+NULL
+NULL
+-0.500	4.000	-3.000	3.000
+0
+
+

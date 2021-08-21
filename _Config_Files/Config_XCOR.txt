@@ -1,0 +1,16 @@
+Version_number: 1.00
+GlobalTitle:     X-Correlation
+How_many_ROWs: 1
+How_many_COLUMNs: 1
+
+0	0
+5	29	627	458
+5	10
+-1	-1
+.000
+.000
+-100.000	100.000	0.000	100.000
+0
+0	0	0	0	1.100	
+
+

@@ -1,0 +1,5 @@
+BLIP_Ver:  1.00000
+m_Left_in_screen:  0.08008
+m_Top_in_screen:  0.30062
+m_Width_in_screen:  0.33164
+m_Height_in_screen:  0.44625
