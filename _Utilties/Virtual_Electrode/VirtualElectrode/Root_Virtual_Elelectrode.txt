@@ -1,0 +1,5 @@
+Ver:  1.00000
+m_Left_in_screen:  0.00039
+m_Top_in_screen:  0.00063
+m_Width_in_screen:  0.36367
+m_Height_in_screen:  0.49500

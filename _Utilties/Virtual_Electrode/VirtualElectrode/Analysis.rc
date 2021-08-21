@@ -1,0 +1,779 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Analysis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Analysis.ico"
+IDR_ANALYSTYPE          ICON                    "res\\AnalysisDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_2DGraph
+    BUTTON      ID_2DGraph_III
+    BUTTON      ID_2DGraph_4
+    SEPARATOR
+    BUTTON      ID_SHOW_000
+    BUTTON      ID_SHOW_TEXTURE
+    BUTTON      SHOW_DRAWING
+    BUTTON      ID_SHOW_GRID
+    BUTTON      ID_BLANK
+    BUTTON      ID_ELECTRODE_COORDINATE
+    SEPARATOR
+    BUTTON      ID_MAKE_POINTS
+    BUTTON      ID_MARKING
+    BUTTON      ID_MAKE_LINE_SEGMENTS
+    BUTTON      ID_SELECT
+    BUTTON      ID_2DGraph_5
+    BUTTON      ID_FILE_SAVE_DRAWING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save_Config",                 ID_FILE_SAVE
+        MENUITEM "&Save_Drawing\tCtrl+S",       ID_FILE_SAVE_DRAWING
+        MENUITEM SEPARATOR
+        MENUITEM "Remember_Window_Position",    ID_FILE_REMEMBER
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM "&Edit",                       65535
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Distance from electrode",     ID_VIEW_DISTANCE_FROM_ELECTRODE
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Set_Origin",                  ID_CROSSHAIR
+        MENUITEM "Set_Grid_Origin",             ID_LOCATE_GRID_ORIGIN
+        MENUITEM "Set_Pitch_Roll_Yaw",          ID_CONFIG_DIALOG
+        MENUITEM "Rename_MRI_Files",            ID_TOOLS_RENAME
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Virtual Electrode",    ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Scale"
+    BEGIN
+        MENUITEM "Edit points",                 ID_EDIT_POINTS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_DRAWING,   VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Analysis"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Virtual Electrode 1.5",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Made and distributed by Simon Hong, 2013",IDC_STATIC,40,25,168,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 288, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,104,50,14
+    LTEXT           "Maximum X",IDC_STATIC,227,73,57,17
+    EDITTEXT        IDC_Variable_1,226,59,55,14,ES_AUTOHSCROLL
+    LTEXT           "Minimum X",IDC_STATIC,116,73,62,12
+    EDITTEXT        IDC_Variable_2,115,60,54,13,ES_AUTOHSCROLL
+    LTEXT           "Maximum Y",IDC_STATIC,11,16,48,13
+    EDITTEXT        IDC_Variable_3,54,12,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MinimumY,53,42,57,15,ES_AUTOHSCROLL
+    LTEXT           "Minimum Y",IDC_STATIC,11,44,42,14
+    GROUPBOX        "",IDC_STATIC,113,7,168,50
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 316, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,157,164,50,14
+    LTEXT           "Average reward-effort curve each day.",IDC_STATIC,89,14,135,16
+    LTEXT           "First session to average (Mini 1)",IDC_STATIC,25,48,105,12
+    LTEXT           "Last session to average.",IDC_STATIC,26,71,92,13
+    EDITTEXT        IDC_EDIT1,134,47,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,134,68,97,12,ES_AUTOHSCROLL
+    LTEXT           "First day to display",IDC_STATIC,29,113,73,12
+    LTEXT           "Last day to display",IDC_STATIC,29,135,84,13
+    EDITTEXT        IDC_EDIT3,134,111,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,134,132,97,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 316, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,104,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,164,50,14
+    LTEXT           "Last day to be included",IDC_STATIC,38,63,82,17
+    LTEXT           "First day to be included (Mini 1)",IDC_STATIC,39,36,101,17
+    EDITTEXT        IDC_EDIT1,153,32,80,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,153,59,80,16,ES_AUTOHSCROLL
+    LTEXT           "First session to display",IDC_STATIC,39,110,92,13
+    LTEXT           "Last session to display",IDC_STATIC,39,135,86,15
+    EDITTEXT        IDC_EDIT3,152,107,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,152,132,82,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 280, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,88,133,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,133,50,14
+    EDITTEXT        IDC_EDIT1,132,39,85,13,ES_AUTOHSCROLL
+    LTEXT           "Start session (mini 1)",IDC_STATIC,37,40,75,11
+    LTEXT           "End session",IDC_STATIC,37,71,64,12
+    EDITTEXT        IDC_EDIT2,132,70,86,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 240, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,87,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,87,50,14
+    EDITTEXT        IDC_EDIT1,109,28,43,16,ES_AUTOHSCROLL
+    LTEXT           "Z coordinate:",IDC_STATIC,53,31,47,17
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 316, 623
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,602,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,602,50,14
+    EDITTEXT        IDC_EDIT4,222,368,59,16,ES_AUTOHSCROLL
+    LTEXT           "SNc stimulation (0: medial, 1: intermediate, 2: lateral)",IDC_STATIC,43,371,176,14
+    EDITTEXT        IDC_EDIT5,83,404,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,77,477,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,77,508,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,77,538,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,77,565,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,209,475,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,209,507,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,209,538,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,209,567,59,16,ES_AUTOHSCROLL
+    LTEXT           "1: Lesion",IDC_STATIC,47,407,35,9
+    LTEXT           "Not used 3",IDC_STATIC,35,480,38,14
+    LTEXT           "Not used 4",IDC_STATIC,35,512,38,14
+    LTEXT           "Not used 5",IDC_STATIC,35,539,38,14
+    LTEXT           "Not used 6",IDC_STATIC,35,569,38,14
+    LTEXT           "Not used 7",IDC_STATIC,168,481,38,14
+    LTEXT           "Not used 8",IDC_STATIC,168,511,38,14
+    LTEXT           "Not used 9",IDC_STATIC,168,543,38,14
+    LTEXT           "Not used 10",IDC_STATIC,168,570,40,14
+    EDITTEXT        IDC_EDIT1,97,22,112,16,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,144,9,32,9
+    LTEXT           "Note",IDC_STATIC,145,51,24,9
+    EDITTEXT        IDC_EDIT2,28,63,260,56,ES_AUTOHSCROLL
+    LTEXT           "Type:",IDC_STATIC,86,141,25,12
+    EDITTEXT        IDC_EDIT3,117,138,70,16,ES_AUTOHSCROLL
+    LTEXT           " 0: ? \n 1: Auditory \n 2: Visual \n 3: Somatosensory \n 4: Saccade \n 5: Movement-related \n 6: Rwd+ \n 7: State+ \n 8: State- \n 9: saccade + unexpected auditory \n 10: arousal",IDC_STATIC,74,165,163,89
+    GROUPBOX        "Types",IDC_STATIC,43,155,229,201
+    GROUPBOX        "Not used",IDC_STATIC,25,464,262,128
+    LTEXT           " 11: Marking Lesion \n 12: Movement / posture \n 13: Movement + somatosensory \n 14: Unexpected auditory \n 15: visuo-saccadic response only when motivated \n 16: Unexpected visuo/auditory/somatosensory \n 17: Rwd- \n 18: Somatosensory + auditory",IDC_STATIC,74,258,182,68
+    LTEXT           " 19: Mouth movement \n 20: RWD delivery \n 21: Unexpected visual & auditory ",IDC_STATIC,74,323,155,27
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 229, 152
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,128,50,14
+    EDITTEXT        IDC_EDIT10,120,25,53,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,120,52,53,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,120,79,53,18,ES_AUTOHSCROLL
+    LTEXT           "Grid Pitch\n (degrees)",IDC_STATIC,56,27,40,17
+    LTEXT           "Grid Roll\n (degrees)",IDC_STATIC,56,54,40,16
+    LTEXT           "Grid Yaw\n (degrees)",IDC_STATIC,56,80,43,18
+END
+
+IDD_ELECTRODE_XYZ DIALOGEX 0, 0, 190, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,92,50,14
+    LTEXT           "Coordinate of electrode tip",IDC_STATIC,48,7,92,18
+    LTEXT           "X",IDC_STATIC,47,41,28,13
+    LTEXT           "Y",IDC_STATIC,94,41,28,13
+    LTEXT           "Z",IDC_STATIC,141,41,28,13
+    EDITTEXT        IDC_ELECT_X,33,52,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDC_ELECT_Y,81,52,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDC_ELECT_Z,130,52,30,14,ES_AUTOHSCROLL
+    LTEXT           "(in Grid coordinate)",IDC_STATIC,59,16,67,11
+END
+
+IDD_DIALOG9 DIALOGEX 0, 0, 260, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Yes I will",IDOK,54,94,50,14
+    PUSHBUTTON      "No, discard them",IDCANCEL,139,93,62,14
+    LTEXT           "Do you want to save the canges first?",IDC_STATIC,69,45,135,14
+END
+
+IDD_DIALOG10 DIALOGEX 0, 0, 199, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,104,92,50,14
+    EDITTEXT        IDC_EDIT1,51,48,93,17,ES_AUTOHSCROLL
+    LTEXT           "Give a distance:",IDC_STATIC,61,30,91,12
+END
+
+IDD_Accept_one_Double DIALOGEX 0, 0, 248, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,52,127,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,126,50,14
+    LTEXT           "What is the width of a pixel in MRI?\n(Assumed: horizontal & vertical sizes are the same)",IDC_STATIC,39,38,182,23
+    EDITTEXT        IDC_EDIT1,99,71,41,19,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,146,76,28,14
+END
+
+IDD_PITCH_ROLL_YAW DIALOGEX 0, 0, 223, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,155,50,14
+    EDITTEXT        IDC_EDIT1,98,35,69,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,98,70,69,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,98,102,69,17,ES_AUTOHSCROLL
+    LTEXT           "Grid Pitch\n(in degrees)",IDC_STATIC,50,36,44,18
+    LTEXT           "Grid Roll\n(in degrees)",IDC_STATIC,50,70,41,19
+    LTEXT           "Grid Yaw\n(in degrees)",IDC_STATIC,50,103,41,20
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 225, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,163,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,163,50,14
+    EDITTEXT        IDC_EDIT1,101,32,40,19,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,70,121,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,160,122,33,13,ES_AUTOHSCROLL
+    LTEXT           "Coronal:  1\nSagittal:  2",IDC_STATIC,56,33,42,16
+    LTEXT           "New Name =",IDC_STATIC,24,124,45,13
+    LTEXT           "x ( Old Name +",IDC_STATIC,110,124,50,13
+    LTEXT           ")",IDC_STATIC,197,124,8,13
+END
+
+IDD_DIALOG12 DIALOGEX 0, 0, 232, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,163,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,163,50,14
+    LTEXT           "Coronal: 1\nSagittal: 2",IDC_STATIC,47,30,37,20
+    LTEXT           "New name =",IDC_STATIC,33,123,51,15
+    EDITTEXT        IDC_EDIT1,78,120,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,155,120,21,14,ES_AUTOHSCROLL
+    LTEXT           "x ( Old name +",IDC_STATIC,103,123,51,15
+    LTEXT           ")",IDC_STATIC,181,123,51,15
+    EDITTEXT        IDC_EDIT3,89,31,34,17,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Analysis MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Analysis"
+            VALUE "LegalCopyright", "1999"
+            VALUE "OriginalFilename", "Analysis.EXE"
+            VALUE "ProductName", "Analysis Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 616
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_ELECTRODE_XYZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_Accept_one_Double, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_PITCH_ROLL_YAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Analysis\n\nAnalys\n\n\nAnalysis.Document\nAnalys Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Analysis"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_2DGraph              "3D model"
+    ID_3DGraph              "Draws 3D graph"
+    ID_2DGraph_III          "Coronal MRI"
+    ID_2DGraph_5            "Use this to correct drawing data file."
+    ID_2DGraph_4            "Sagittal MRI"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Parameters           "Change Parameters!"
+    Quick_Function          "Quick_Function"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_SAVE_DRAWING    "2D: Saves the darwing data  / 3D saves the neural info."
+    ID_SHOW_000             "Show / Hide Origin of atlas"
+    ID_SELECT               "Select and move objects"
+    ID_MAKE_POINTS          "Dot drawing mode"
+    ID_MAKE_LINE_SEGMENTS   "Line drawing mode"
+    ID_CROSSHAIR            "Set the origin of the 3D in MRI"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CONFIG_DIALOG        "Set pitch, roll, yaw"
+    ID_SHOW_TEXTURE         "Show / Hide neural information"
+    SHOW_DRAWING            "Show / Hide drawing"
+    ID_ELECTRODE_COORDINATE "Designalte the location of the electrode tip"
+    ID_VIEW_DISTANCE_FROM_ELECTRODE 
+                            "Define a distance from the electrode to HIGHLIGHT in OpenGL"
+    ID_BLANK                "Reset MRI to its original configuration (use this after magnification)"
+    ID_LOCATE_GRID_ORIGIN   "Set the origin of the grid in MRI"
+    ID_TOOLS_RENAME         "Use this function to rename MRIs, indicating the depth of the images"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Analysis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
