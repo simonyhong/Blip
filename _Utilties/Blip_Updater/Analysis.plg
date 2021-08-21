@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Analysis - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\simon\LOCALS~1\Temp\RSP954.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Analysis.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\simon\LOCALS~1\Temp\RSP954.tmp" 
+Creating temporary file "C:\DOCUME~1\simon\LOCALS~1\Temp\RSP955.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Analysis.pdb" /machine:I386 /out:"Release/Analysis.exe" 
+".\Release\Analysis.obj"
+".\Release\AnalysisDoc.obj"
+".\Release\AnalysisView.obj"
+".\Release\DialogueBox.obj"
+".\Release\Graph2D.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\ThreeD.obj"
+".\Release\Analysis.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\simon\LOCALS~1\Temp\RSP955.tmp"
+<h3>Output Window</h3>
+Compiling...
+AnalysisView.cpp
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(99) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(102) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(105) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(465) : warning C4005: 'dt' : macro redefinition
+        C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.h(59) : see previous definition of 'dt'
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(430) : warning C4101: 'i' : unreferenced local variable
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(430) : warning C4101: 'j' : unreferenced local variable
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(481) : warning C4101: 'm_ddDCNTonic' : unreferenced local variable
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(483) : warning C4101: 'm_ddDCNAveCF' : unreferenced local variable
+C:\Documents and Settings\simon\Desktop\CBLM II\AnalysisView.cpp(471) : warning C4101: 'm_ddAveCF' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+Analysis.exe - 0 error(s), 9 warning(s)
+</pre>
+</body>
+</html>
