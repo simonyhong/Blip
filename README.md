@@ -1,2 +1,5 @@
 # Blip
-Windows-based neural-recording and behavior-controlling experimental solution 
+Windows-based neural-recording and behavior-controlling experimental solution <br>Changes:
+
+(1) Bug fix in RAS
+(2) VIS can display disks
