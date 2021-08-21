@@ -4,9 +4,9 @@ Please read "Blip_Guide.pptx" to know how to install and operate.<br><br>
 In brief:<br>
 This software suite uses your Windows PC and a "NI-PCIe 6353" or similar board to:<br> 
 (1) collect realtime data from analog/digital signal sources<br> 
-(2) interact with the experiment subject
-(3) online analyize signals and plots
-(4) guide the 3D position of the probe in 3D MRI (in case you use MRI)
+(2) interact with the experiment subject<br>
+(3) online analyize signals and plots<br>
+(4) guide the 3D position of the probe in 3D MRI (in case you use MRI)<br><br>
  
 
 Changes:<br>
