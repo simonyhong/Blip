@@ -17,5 +17,5 @@ Changes:<br>
 <br><br>
 *First version released in February 2011<br>
 *Latest version released in May 2019<br>
-*You received free, give free.<br>
+*You received free, give free.<br><br>
 -Simon Hong
