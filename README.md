@@ -4,4 +4,4 @@ Changes:<br>
 (1) Bug fix in RAS<br>
 (2) VIS can display disks
 <br><br>
-First version released in February 2011 by Simon Hong.  You received free, give free.
+*First version released in February 2011 by Simon Hong.  You received free, give free.
