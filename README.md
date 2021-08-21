@@ -4,8 +4,8 @@
 In brief:<br>
 This software suite uses your Windows PC and a "NI-PCIe 6353" or similar board to:<br> 
 (1) collect realtime data from analog/digital signal sources<br> 
-(2) interact with the experiment subject<br>
-(3) online analyize signals and plots<br>
+(2) interact with the experiment instrument and subjects<br>
+(3) online analyze signals and plot them<br>
 (4) guide the 3D position of the probe in 3D MRI (in case you use MRI)<br><br>
  
 
