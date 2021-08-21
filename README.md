@@ -7,6 +7,7 @@ This software suite uses your Windows PC and a "NI-PCIe 6353" or similar board t
 >(2) interact with the experiment instrument and subjects<br>
 >(3) online analyze signals and plot them<br>
 >(4) guide the 3D position of the probe in 3D MRI (in case you use MRI)</p>
+
 Also it has an open format with which you can modify and write your own experiment process.
  
 
