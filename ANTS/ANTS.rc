@@ -1,0 +1,611 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ANTS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ANTS.ico"
+IDR_ANALYSTYPE          ICON                    "res\\AntsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SAVE_LFP
+    SEPARATOR
+    BUTTON      ID_ANTIDROMIC_STIMULATION
+    SEPARATOR
+    BUTTON      ID_AutoStim
+    SEPARATOR
+    BUTTON      ID_FASTER_STM
+    SEPARATOR
+    BUTTON      ID_ORTHODROMIC_STIMULATION
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Config_Open",                 ID_FILE_OPEN
+        MENUITEM "Config_Save",                 ID_FILE_SAVE_AS
+        MENUITEM "Close",                       ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Remember_Window_Position",    ID_FILE_REMEMBER
+        MENUITEM SEPARATOR
+        MENUITEM "Continuous_Record_Mode",      ID_FILE_CONTINUOUS_RECORDING_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Antidromic Properties",       ID_PROPERTIES
+        MENUITEM "Set Pre-, Post-Stimulation Periods  for Save", ID_TOOLS_SET_PRE_POST_PERIODS_TO_SAVE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ANTS...",              ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Scale"
+    BEGIN
+        MENUITEM "Delete the rest",             ID_SCALE_DELETE_THE_REST
+        MENUITEM "Delete Figs",                 ID_SCALE_DELETE_FIGS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ANTS"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ANTS Version 1.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 288, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,104,50,14
+    LTEXT           "Maximum X",IDC_STATIC,227,73,57,17
+    EDITTEXT        IDC_Variable_1,226,59,55,14,ES_AUTOHSCROLL
+    LTEXT           "Minimum X",IDC_STATIC,116,73,62,12
+    EDITTEXT        IDC_Variable_2,115,60,54,13,ES_AUTOHSCROLL
+    LTEXT           "Maximum Y",IDC_STATIC,11,16,48,13
+    EDITTEXT        IDC_Variable_3,54,12,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MinimumY,53,42,57,15,ES_AUTOHSCROLL
+    LTEXT           "Minimum Y",IDC_STATIC,11,44,42,14
+    GROUPBOX        "",IDC_STATIC,113,7,168,50
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,37,50,14
+    EDITTEXT        IDC_EDIT_STRING1,7,8,172,20,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,42,50,14
+    EDITTEXT        IDC_EDIT1,35,20,115,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 317, 598
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,107,571,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,161,571,50,14
+    LTEXT           "Stimulation channel (DO_FIRST_GATING_CHAN ~ DO_LAST_GATING_CHAN)",IDC_STATIC,72,55,110,28
+    LTEXT           "Post-trigger delay (ms)",IDC_STATIC,183,70,78,10
+    EDITTEXT        IDC_EDIT2,122,87,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,122,103,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,122,119,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,122,135,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,122,151,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,122,179,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,122,195,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,122,211,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,122,227,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,122,243,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,198,86,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,198,103,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,198,119,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,198,135,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,198,151,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,198,179,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,198,195,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,198,211,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,198,227,23,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,198,243,23,13,ES_AUTOHSCROLL
+    LTEXT           "1st Ch:",IDC_STATIC,90,89,29,13
+    LTEXT           "2nd Ch:",IDC_STATIC,90,105,29,13
+    LTEXT           "3rd Ch:",IDC_STATIC,90,121,24,13
+    LTEXT           "4th Ch:",IDC_STATIC,90,137,24,13
+    LTEXT           "5th Ch:",IDC_STATIC,90,153,24,13
+    LTEXT           "6th Ch:",IDC_STATIC,90,181,24,13
+    LTEXT           "7th Ch:",IDC_STATIC,90,197,24,13
+    LTEXT           "8th Ch:",IDC_STATIC,90,213,24,13
+    LTEXT           "9th Ch:",IDC_STATIC,90,229,24,13
+    LTEXT           "10th Ch:",IDC_STATIC,86,245,30,13
+    EDITTEXT        IDC_EDIT1,175,534,40,13,ES_AUTOHSCROLL
+    LTEXT           "The following parameter is to make Antidromic stimulation align at 0.",IDC_STATIC,50,513,234,10
+    LTEXT           "Micro Sec",IDC_STATIC,219,536,31,8
+    EDITTEXT        IDC_EDIT22,122,279,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT23,122,296,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT24,122,313,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT25,122,330,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT26,122,347,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT27,122,376,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT28,122,394,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT29,122,412,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT30,122,430,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT31,122,447,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT32,198,279,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT33,198,295,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT34,198,312,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT35,198,331,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT36,198,348,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT37,198,375,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT38,198,394,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT39,198,412,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT40,198,431,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT41,198,448,23,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "11th Ch:",IDC_STATIC,89,281,29,13
+    LTEXT           "12th Ch:",IDC_STATIC,89,298,29,13
+    LTEXT           "13th Ch:",IDC_STATIC,89,315,30,13
+    LTEXT           "14th Ch:",IDC_STATIC,89,332,31,13
+    LTEXT           "15th Ch:",IDC_STATIC,89,349,32,13
+    LTEXT           "16th Ch:",IDC_STATIC,89,378,32,13
+    LTEXT           "17th Ch:",IDC_STATIC,89,395,32,13
+    LTEXT           "18th Ch:",IDC_STATIC,89,413,31,13
+    LTEXT           "19th Ch:",IDC_STATIC,89,432,30,13
+    LTEXT           "20th Ch:",IDC_STATIC,89,449,30,13
+    LTEXT           "Bias of Antidromic stimulation latency:",IDC_STATIC,51,536,121,8
+    LTEXT           "DAS_sv uses this to compensate for the physical delay of stimulation.",IDC_STATIC,49,523,233,11
+    LTEXT           "- Antidromic Only -",IDC_STATIC,129,501,61,10
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 218, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Activation",IDOK,47,28,50,14
+    PUSHBUTTON      "Collision",IDCANCEL,118,28,50,14
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 219, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Overwrite",IDC_OVERWRITE,85,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,149,52,50,14
+    PUSHBUTTON      "Append",IDC_APPEND_FILE,21,52,48,15
+    LTEXT           "The file already exists!",IDC_STATIC,75,25,80,12
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 305, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,82,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,122,50,14
+    LTEXT           "Recording Channel",IDC_STATIC,44,53,66,10
+    LTEXT           "Stimulation Channel",IDC_STATIC,196,55,67,10
+    EDITTEXT        IDC_EDIT1,47,66,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,200,67,53,13,ES_AUTOHSCROLL
+    CONTROL         "Is it Antidromic Triggering Channel?",IDC_CHECK_Trigger,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,46,31,129,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "ANTS MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ANTS"
+            VALUE "LegalCopyright", "Copyright (C) 1999"
+            VALUE "OriginalFilename", "ANTS.EXE"
+            VALUE "ProductName", "ANTS Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 585
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ANTS\n\nAnalys\n\n\nAnts.Document\nAnalys Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ANTS"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_AutoStim             "Stimulate every 1 second"
+    ID_3DGraph              "Draws 3D graph"
+END
+
+STRINGTABLE
+BEGIN
+    ID_Parameters           "Change Parameters!"
+    Quick_Function          "Quick_Function"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ANTS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
