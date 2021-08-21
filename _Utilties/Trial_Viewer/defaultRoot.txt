@@ -1,0 +1,16 @@
+Version_number: 1.00
+GlobalTitle:    Trial Viewer
+How_many_ROWs: 1
+How_many_COLUMNs: 1
+
+0	0
+Title:   Trial #: 1 
+5	41	787	505
+6	12
+-1	-1
+NULL
+NULL
+0.000	10000.000	-50.000	50.000
+0
+
+
