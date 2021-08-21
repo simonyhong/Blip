@@ -1,6 +1,6 @@
 # Blip
-A Windows-based neural-recording and behavior-controlling experiment solution <br>
-Please read "Blip_Guide.pptx" to know how to install and operate.<br><br>
+## A Windows-based neural-recording and behavior-controlling experiment solution <br>
+## Please read "Blip_Guide.pptx" to know how to install and operate.<br><br>
 In brief:<br>
 This software suite uses your Windows PC and a "NI-PCIe 6353" or similar board to:<br> 
 (1) collect realtime data from analog/digital signal sources<br> 
