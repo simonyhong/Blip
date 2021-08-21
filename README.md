@@ -1,5 +1,5 @@
 # Blip
-## A Windows-based neural-recording and behavior-controlling experiment solution <br>
+## A Windows-based neural-recording and behavior-controlling experiment solution <p>
 ## Please read "Blip_Guide.pptx" to know how to install and operate.<br><br>
 ## If you are updating an existing Blip, you can download the "New_Blip_May_7_2019.zip" and execute "Update_existing_Blip.exe".<br>
 ## This zip file also includes all the files in this repository as well.<br>
