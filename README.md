@@ -1,8 +1,6 @@
 # Blip
-## * A Windows-based neural-recording and behavior-controlling experiment solution.
-## Please read "Blip_Guide.pptx" to know how to install and operate.<p>
-## If you are updating an existing Blip, you can download the "New_Blip_May_7_2019.zip" and execute "Update_existing_Blip.exe".<p>
-## This zip file also includes all the files in this repository as well.<p>
+## A Windows-based neural-recording and behavior-controlling experiment solution. Please read "Blip_Guide.pptx" to know how to install and operate.<p>
+If you are updating an existing Blip, you can download the "New_Blip_May_7_2019.zip" and execute "Update_existing_Blip.exe". This zip file also includes all the files in this repository as well.<p>
 In brief:<br>
 This software suite uses your Windows PC and a "NI-PCIe 6353" or similar board to:<br> 
 >(1) collect realtime data from analog/digital signal sources<br> 
